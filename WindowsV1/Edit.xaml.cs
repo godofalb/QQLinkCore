@@ -46,7 +46,14 @@ namespace WindowsV1
                 Console.WriteLine("Have{0} {1}", node.Attributes[0].Value, node.Attributes[1].Value);
             }
             XmlNode node1=doc.SelectSingleNode("/GeneralSetting/des");
-            Des.Text = node1.Attributes[0].Value;
+            if (node1 != null)
+            {
+                Des.Text = node1.Attributes[0].Value;
+            }
+            else
+            {
+                Des.Text = "";
+            }
             DataList.DataContext = userdata;
         }
 
