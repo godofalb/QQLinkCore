@@ -38,5 +38,14 @@ namespace WindowsV1
         { get; set; }
         public bool NeedD
         { get; set; }
+        public string Groups
+        { get; set; }
+        public string Friends
+        { get; set; }
+        public string Dis
+        { get; set; }
+        public string GroupMode{ get; set; }
+        public string FriendMode{ get; set; }
+        public string DisMode { get; set; }
     }
 }

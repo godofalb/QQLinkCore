@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:WindowsV1"
-        Title="Edit" Height="300" Width="400" Closing="Window_Closing_1">
+        Title="Edit" Height="400" Width="400" Closing="Window_Closing_1">
     <Window.Resources>
         <Style x:Key="listBoxStyle" TargetType="{x:Type ListBox}">
 
@@ -25,7 +25,9 @@
             <RowDefinition Height="30*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
             <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
             <RowDefinition Height="20*"></RowDefinition>
+            
         </Grid.RowDefinitions>
         <StackPanel Name="BaseData" HorizontalAlignment="Center" Grid.Row="0" Orientation="Horizontal" Margin="2">
             <CheckBox IsChecked="{Binding Path=Used,Mode=TwoWay}"  VerticalAlignment="Center" Margin="5">使用中</CheckBox>
@@ -33,8 +35,29 @@
             <CheckBox IsChecked="{Binding Path=NeedG,Mode=TwoWay}" IsEnabled="{Binding Path=GChangeable}" VerticalAlignment="Center" Margin="5">获取群信息</CheckBox>
             <CheckBox IsChecked="{Binding Path=NeedD,Mode=TwoWay}" IsEnabled="{Binding Path=DChangeable}" VerticalAlignment="Center" Margin="5">获得讨论组信息</CheckBox>
         </StackPanel>
-        <ListBox ItemsSource="{Binding}" Name="DataList" Grid.Row="1" Style="{StaticResource listBoxStyle}"></ListBox>
-        <TextBox Grid.Row="2" Name="Des" AutoWordSelection="True"></TextBox>
-        <Button  Grid.Row="3" HorizontalAlignment="Right" Width="100" Margin="10" Content="保存配置" Name="SaveButton" Click="Save_Click_1" ></Button>
+        <Grid Name="BaseData2" HorizontalAlignment="Center" Grid.Row="1" Width="350">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"></ColumnDefinition>
+                <ColumnDefinition Width="30*"></ColumnDefinition>
+                <ColumnDefinition Width="30*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0">好友信息模式</Label>
+            <Label Grid.Row="0" Grid.Column="1">群信息模式</Label>
+            <Label Grid.Row="0" Grid.Column="2">组信息模式</Label>
+            <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding Path=Friends, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=Groups, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding Path=Dis, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="0" Text="{Binding Path=FriendMode, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=GroupMode, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Path=DisMode, Mode=TwoWay}"></TextBox>
+        </Grid>
+        <ListBox ItemsSource="{Binding}" Name="DataList" Grid.Row="2" Style="{StaticResource listBoxStyle}"></ListBox>
+        <TextBox Grid.Row="3" Name="Des" AutoWordSelection="True"></TextBox>
+        <Button  Grid.Row="4" HorizontalAlignment="Right" Width="100" Margin="10" Content="保存配置" Name="SaveButton" Click="Save_Click_1" ></Button>
     </Grid>
 </Window>
