@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--请保证文档名称和你的类的类名一样（注意不是工程名，不是拓展文件名，是类名）-->
+<GeneralSetting>
+  <name value="测试插件1.1">
+    <!--用来编辑插件显示的名字-->
+  </name>
+  <des value="这是一个很普通的插件啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊&#xD;&#xA;啊啊啊&#xD;&#xA;">
+    <!--用来编辑插件说明-->
+  </des>
+  <!--以下4个信息原则上交由用户配置，可以自行修改作为用户初始配置-->
+  <add key="NeedF" value="Need">
+  </add>
+  <add key="NeedG" value="Need">
+  </add>
+  <add key="NeedD" value="Need">
+  </add>
+  <add key="Used" value="Yes">
+  </add>
+  <UserSetting>
+    <!--自定义需求数据，将会在插件装载时加载，可以在字符字典userArg中访问。数据不要过大，建议仅保存配置数据-->
+    <add key="testing" value="deasded">
+    </add>
+    <add key="ddd" value="defined">
+    </add>
+  </UserSetting>
+  <!--reject为拒绝列表，receive为接受列表-->
+  <FriendList value="" Mode="reject" />
+  <GroupList value="" Mode="reject" />
+  <DisList value="" Mode="reject" />
+</GeneralSetting>
