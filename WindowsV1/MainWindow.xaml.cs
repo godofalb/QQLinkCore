@@ -42,7 +42,7 @@ namespace WindowsV1
             
             InitializeComponent();
             currentdir = ConfigurationManager.AppSettings[0];
-            if (currentdir == "NotDef")
+            if (currentdir.ToLower()== "notdef")
             {
                 currentdir = Directory.GetCurrentDirectory() + @"\pluginDir";
             }

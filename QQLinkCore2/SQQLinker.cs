@@ -230,13 +230,14 @@ namespace QQLinkCore
         }
         string poll(params string[] ps)
         {
-            Console.WriteLine("Polling: " + Thread.CurrentThread.ManagedThreadId);
+           // Console.WriteLine("Polling: " + Thread.CurrentThread.ManagedThreadId);
             string polldatastring = "{\"ptwebqq\":\"" + ptwebqq + "\",\"clientid\":53999199,\"psessionid\":\"" + psessionid + "\",\"key\":\"\"}";
+            /*
             Console.WriteLine("{0} : {1}","uin",uin);
             Console.WriteLine("{0} : {1}","vf",vfwebqq);
             Console.WriteLine("{0} : {1}", "p", psessionid);
             Console.WriteLine("{0} : {1}", "ptw", ptwebqq);
-            
+            */
             while (true)
             {
 

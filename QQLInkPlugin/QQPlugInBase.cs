@@ -37,14 +37,8 @@ namespace QQLinkPlugIn
     }
     
     public delegate string GetSomething();
-    public enum polltype:byte
-    { 
-        message=1,
-        discu_message=2,
-        group_message=4,
-        none=0
-
-    }
+  
+    
     [Serializable]
    
     [IsPlugIn(Use = false,NeedD=false,NeedF=false,NeedG=false)]
@@ -131,7 +125,6 @@ namespace QQLinkPlugIn
             get;
             set;
         }
-     
         public polltype ReceiveType
         {
             get;
@@ -142,7 +135,36 @@ namespace QQLinkPlugIn
             set { qqLinker = value; }
             get { return qqLinker; }
         }
-        
+        public  HashSet<string> FriendList
+        {
+            get;
+            set;
+        }
+        public  HashSet<string> GroupList
+        {
+            get;
+            set;
+        }
+        public  HashSet<string> DisList
+        {
+            get;
+            set;
+        }
+        public receivemode FriendMode
+        {
+            get;
+            set;
+        }
+        public receivemode GroupMode
+        {
+            get;
+            set;
+        }
+        public receivemode DisMode
+        {
+            get;
+            set;
+        }
         protected QQPlugInBase()
         {
            
@@ -173,6 +195,50 @@ namespace QQLinkPlugIn
                         return false;
                     }
 
+                }
+            }
+            string[] finds = { "/GeneralSetting/GroupList", "/GeneralSetting/FriendList", "/GeneralSetting/DisList" };
+            XmlNode modenode;
+            foreach (string xpath in finds)
+            {
+                modenode = doc.SelectSingleNode(xpath);
+                if (modenode != null&&modenode.Attributes.Count>=2)
+                {
+                    string mode = modenode.Attributes[1].Value;
+                    receivemode rmode=receivemode.reject;
+                    if (mode.ToLower() == "receive")
+                    {
+                        rmode = receivemode.receive;
+                    }
+
+                    string[] qqlist = modenode.Attributes[0].Value.Split(',');
+                    HashSet<string> t = null;
+                    if (xpath.Length == 23)
+                    {
+                        DisList = new HashSet<string>();
+                        DisMode = rmode;
+                        t = DisList;
+                    }
+                    else if (xpath.Length == 25)
+                    {
+                        GroupList = new HashSet<string>();
+                        GroupMode = rmode;
+                        t = GroupList;
+                    }
+                    else
+                    {
+                        FriendList = new HashSet<string>();
+                        FriendMode = rmode;
+                        t = FriendList;
+                    }
+                    
+                    foreach (string qqcode in qqlist)
+                    {
+                        
+                        t.Add(qqcode.Trim());
+                    }
+                   
+                    
                 }
             }
             nodes = doc.SelectNodes("/GeneralSetting/UserSetting/*");

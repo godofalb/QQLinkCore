@@ -28,7 +28,59 @@ namespace QQLinkCore
         }
         public QQPlugInBase.sendBack DoWork(QQPlugInBase.ReceiveMsg rmg,int index)
         {
-           
+            switch (rmg.type)
+            { 
+                case polltype.message:
+                    if (plugs[index].FriendMode == receivemode.reject)
+                    {
+                        if (plugs[index].FriendList.Contains(rmg.from_qq))
+                        {
+                            return QQPlugInBase.DontSend;
+                        }
+                    }
+                    else
+                    {
+                        if (!plugs[index].FriendList.Contains(rmg.from_qq))
+                        {
+                            return QQPlugInBase.DontSend;
+                        }
+                    }
+                    break;
+                case polltype.discu_message:
+                    if (plugs[index].DisMode == receivemode.reject)
+                    {
+                        if (plugs[index].DisList.Contains(rmg.from_qq))
+                        {
+                            return QQPlugInBase.DontSend;
+                        }
+                    }
+                    else
+                    {
+                        if (!plugs[index].DisList.Contains(rmg.from_qq))
+                        {
+                            return QQPlugInBase.DontSend;
+                        }
+                    }
+                    break;
+                case polltype.group_message:
+                    if (plugs[index].GroupMode == receivemode.reject)
+                    {
+                        if (plugs[index].GroupList.Contains(rmg.from_qq))
+                        {
+                            return QQPlugInBase.DontSend;
+                        }
+                    }
+                    else
+                    {
+                        if (!plugs[index].GroupList.Contains(rmg.from_qq))
+                        {
+                            return QQPlugInBase.DontSend;
+                        }
+                    }
+                    break;
+                default:
+                    break;
+            }
             if ((plugs[index].ReceiveType & rmg.type) != polltype.none)
             {
                 return plugs[index].ReceiveMessage(rmg);
@@ -44,11 +96,11 @@ namespace QQLinkCore
             dir = mdir;
             plugs = new List<QQPlugInBase>();
             QQPlugInBase.QQLinker = linker;
-         
+            
             foreach (string file in Directory.GetFiles(dir))
             {
                 
-               
+                
                 if (file.EndsWith(".dll"))
                 {
                     Assembly newassembly = Assembly.LoadFrom(file);

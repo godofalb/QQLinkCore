@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="enum.cs" />
     <Compile Include="Interface1.cs" />
     <Compile Include="QQPlugInBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
