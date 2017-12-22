@@ -102,6 +102,7 @@ namespace WindowsV1
             else
             {
                 XmlNode node = node1.SelectSingleNode("name");
+               
                 node.Attributes[0].Value = Data.Name;
 
             }
@@ -137,6 +138,10 @@ namespace WindowsV1
             {
 
                 friendNode.Attributes[0].Value = Data.Friends;
+                if (Data.FriendMode == "")
+                { 
+                    Data.FriendMode="reject";
+                }
                 friendNode.Attributes[1].Value = Data.FriendMode;
             }
             XmlNode gnode = node1.SelectSingleNode("GroupList");
@@ -156,6 +161,10 @@ namespace WindowsV1
             {
 
                 gnode.Attributes[0].Value = Data.Groups;
+                if (Data.GroupMode == "")
+                {
+                    Data.GroupMode = "reject";
+                }
                 gnode.Attributes[1].Value = Data.GroupMode;
             }
             XmlNode dnode = node1.SelectSingleNode("DisList");
@@ -175,6 +184,10 @@ namespace WindowsV1
             {
 
                 dnode.Attributes[0].Value = Data.Dis;
+                if (Data.DisMode == "")
+                {
+                    Data.DisMode = "reject";
+                }
                 dnode.Attributes[1].Value = Data.DisMode;
             }
             foreach (XmlNode node in nodes)

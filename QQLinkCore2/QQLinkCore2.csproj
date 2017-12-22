@@ -37,11 +37,13 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="QQLInkPlugin">
-      <HintPath>..\QQLInkPlugin\bin\Debug\QQLInkPlugin.dll</HintPath>
+    <Reference Include="QQLInkPlugin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QQLInkPlugin\bin\Release\QQLInkPlugin.dll</HintPath>
     </Reference>
-    <Reference Include="SJsonSolver">
-      <HintPath>..\SJsonSolver\bin\Debug\SJsonSolver.dll</HintPath>
+    <Reference Include="SJsonSolver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SJsonSolver\bin\Release\SJsonSolver.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

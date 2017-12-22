@@ -156,12 +156,14 @@ namespace WindowsV1
         private void reload_Click_1(object sender, RoutedEventArgs e)
         {
             linker.loadDomain(currentdir);
+            Sig.Content = "正常";
             reload.IsEnabled = false;
         }
 
         private void unload_Click_1(object sender, RoutedEventArgs e)
         {
             linker.Unload();
+            Sig.Content = "需要刷新";
             reload.IsEnabled = true;
         }
 
@@ -177,7 +179,10 @@ namespace WindowsV1
             linker.Unload();
             linker.loadDomain(currentdir);
             reload.IsEnabled = false;
-            Sig.Content = "正常";
+            if (Sig.Content == "需要刷新")
+            {
+                Sig.Content = "正常";
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -28,54 +28,70 @@ namespace QQLinkCore
         }
         public QQPlugInBase.sendBack DoWork(QQPlugInBase.ReceiveMsg rmg,int index)
         {
+            
             switch (rmg.type)
             { 
                 case polltype.message:
-                    if (plugs[index].FriendMode == receivemode.reject)
+                    if (plugs[index].FriendList != null)
                     {
-                        if (plugs[index].FriendList.Contains(rmg.from_qq))
+                        if (plugs[index].FriendMode == receivemode.reject)
                         {
-                            return QQPlugInBase.DontSend;
+                            if (plugs[index].FriendList.Contains(rmg.from_qq))
+                            {
+                                return QQPlugInBase.DontSend;
+                            }
+                        }
+                        else
+                        {
+                            if (!plugs[index].FriendList.Contains(rmg.from_qq))
+                            {
+                                return QQPlugInBase.DontSend;
+                            }
                         }
                     }
-                    else
-                    {
-                        if (!plugs[index].FriendList.Contains(rmg.from_qq))
-                        {
-                            return QQPlugInBase.DontSend;
-                        }
-                    }
+                    
                     break;
                 case polltype.discu_message:
-                    if (plugs[index].DisMode == receivemode.reject)
+                    if (plugs[index].DisList != null)
                     {
-                        if (plugs[index].DisList.Contains(rmg.from_qq))
+                        if (plugs[index].DisMode == receivemode.reject)
                         {
-                            return QQPlugInBase.DontSend;
+                            if (plugs[index].DisList.Contains(rmg.from_qq))
+                            {
+                                return QQPlugInBase.DontSend;
+                            }
                         }
-                    }
-                    else
-                    {
-                        if (!plugs[index].DisList.Contains(rmg.from_qq))
+                        else
                         {
-                            return QQPlugInBase.DontSend;
+                            if (!plugs[index].DisList.Contains(rmg.from_qq))
+                            {
+                                return QQPlugInBase.DontSend;
+                            }
                         }
                     }
                     break;
                 case polltype.group_message:
-                    if (plugs[index].GroupMode == receivemode.reject)
+                    if (plugs[index].GroupList != null)
                     {
-                        if (plugs[index].GroupList.Contains(rmg.from_qq))
+                        Console.WriteLine("NotNull");
+                        if (plugs[index].GroupMode == receivemode.reject)
                         {
-                            return QQPlugInBase.DontSend;
+                            if (plugs[index].GroupList.Contains(rmg.from_qq))
+                            {
+                                return QQPlugInBase.DontSend;
+                            }
+                        }
+                        else
+                        {
+                            if (!plugs[index].GroupList.Contains(rmg.from_qq))
+                            {
+                                return QQPlugInBase.DontSend;
+                            }
                         }
                     }
                     else
                     {
-                        if (!plugs[index].GroupList.Contains(rmg.from_qq))
-                        {
-                            return QQPlugInBase.DontSend;
-                        }
+                        Console.WriteLine("Null");
                     }
                     break;
                 default:

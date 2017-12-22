@@ -35,11 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="QQLinkCore">
-      <HintPath>..\QQLinkCore2\bin\Debug\QQLinkCore.dll</HintPath>
+    <Reference Include="QQLinkCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QQLinkCore2\bin\Release\QQLinkCore.dll</HintPath>
     </Reference>
-    <Reference Include="QQLInkPlugin">
-      <HintPath>..\QQLInkPlugin\bin\Debug\QQLInkPlugin.dll</HintPath>
+    <Reference Include="QQLInkPlugin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QQLInkPlugin\bin\Release\QQLInkPlugin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
