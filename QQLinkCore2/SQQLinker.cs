@@ -20,7 +20,7 @@ namespace QQLinkCore
     public class SQQLinker:MarshalByRefObject,IQQlinker
    
     {
-       
+        const int MaxTCount = 100;
         //HashSet<string> rejectUin = new HashSet<string>();
         delegate string smallrequest(params string[] s);
         delegate QQPlugInBase.sendBack Work(QQPlugInBase.ReceiveMsg rmg,int index);
@@ -34,6 +34,7 @@ namespace QQLinkCore
         AppDomain proxyDomain;
         Work w;
         LoadProxy loadP;
+        int currendTCount = 0;
         public SQQLinker(string dir)
         {
             cc = new CookieContainer();
