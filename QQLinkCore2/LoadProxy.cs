@@ -6,6 +6,7 @@ using QQLinkPlugIn;
 using System.IO;
 using System.Reflection;
 using System.Diagnostics;
+using System.Runtime.Remoting.Lifetime;
 namespace QQLinkCore
 {
     [Serializable]
@@ -15,6 +16,18 @@ namespace QQLinkCore
         List<QQPlugInBase> plugs;
         string dir;
         
+        public override object InitializeLifetimeService()
+        {
+            ILease lease = (ILease)base.InitializeLifetimeService();
+            if (lease.CurrentState == LeaseState.Initial)
+            {
+                lease.InitialLeaseTime = TimeSpan.FromSeconds(0);
+                
+               
+            }
+            return lease;
+           
+        }
         public System.Collections.IEnumerator GetEnumerator()
         {
             foreach (QQPlugInBase plug in plugs)

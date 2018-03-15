@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using QQLinkPlugIn;
 using System.Reflection;
 using System.Diagnostics;
+using System.Runtime.Remoting.Lifetime;
 namespace QQLinkCore
    
 {
@@ -34,7 +35,8 @@ namespace QQLinkCore
         AppDomain proxyDomain;
         Work w;
         LoadProxy loadP;
-        int currendTCount = 0;
+       
+        string formardir = null;
         public SQQLinker(string dir)
         {
             cc = new CookieContainer();
@@ -45,13 +47,17 @@ namespace QQLinkCore
            // plugs.Add(new DemoPlugIn());
            // Console.WriteLine(getContect());
         }
-        public void PerTest()
+        public override object InitializeLifetimeService()
         {
-            FileStream sd = new FileStream(@"C:\Users\xwl99\ans.txt", FileMode.Open, FileAccess.Write);
-            StreamWriter ss = new StreamWriter(sd);
+            ILease lease = (ILease)base.InitializeLifetimeService();
+            if (lease.CurrentState == LeaseState.Initial)
+            {
+                lease.InitialLeaseTime = TimeSpan.FromSeconds(0);
 
-            ss.WriteLine("--++++++++");
-            ss.Close();
+
+            }
+            return lease;
+
         }
         public void PerTest(string path)
         {
@@ -73,8 +79,9 @@ namespace QQLinkCore
         }
         public void loadDomain(string dir)
         {
-            
+            formardir = dir;
             proxyDomain = AppDomain.CreateDomain("proxy");
+            
             Type proxytype=typeof(LoadProxy);
             Assembly assembly=Assembly.GetAssembly(proxytype);
             loadP = proxyDomain.CreateInstance(assembly.FullName,proxytype.FullName).Unwrap() as LoadProxy;
@@ -244,18 +251,18 @@ namespace QQLinkCore
 
                 try
                 {
-                    Console.WriteLine("Asking new");
+                    Console.WriteLine("Asking new1");
                     HttpWebRequest pollrequest = send_d1("http://d1.web2.qq.com/channel/poll2", polldatastring);
-
+                    Console.WriteLine("S");
                     HttpWebResponse pollresponse = null;
                     pollrequest.Timeout = 1000000;
-
-
                     pollresponse = pollrequest.GetResponse() as HttpWebResponse;
+                    Console.WriteLine("Ss");
                     string message = GetContent(pollresponse);
                     string qq = "515102224";
-                   
+                    
                     SJsonSolver json = SJsonSolver.Creste(message);
+
                     if ((string)json["retcode"] == "0" && !json.Contains("errmsg")&&proxyDomain!=null)
                     {
                         bool called;
@@ -286,12 +293,27 @@ namespace QQLinkCore
                         }
                         rmg.senderUin = senduin;
 #warning 获得昵称   //getSingleLongNick(senduin);
+                        Console.WriteLine("S1");
+                        try
+                        {
+                            Console.WriteLine(loadP.Size);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Newly"+ex.Message);
+                            Console.WriteLine(ex.GetType().FullName);
+                            Unload();
+                            loadDomain(formardir);
+                        }
+
                         
                         for(int i=0;i<loadP.Size;i++)
                         {
 
-                           
+                            Console.WriteLine("S2"+i);
                             w.BeginInvoke(rmg, i, new AsyncCallback(sendBack), w);
+
+                            Console.WriteLine("S3" + i);
                             /*
                             QQPlugInBase.sendBack ddd = loadP.DoWork(rmg, i);
                             if (ddd.send)
@@ -300,15 +322,15 @@ namespace QQLinkCore
                                 SendMessage(ddd);
                             }
                            */
-                          
+
                         }
                        
                     }
                 }
                 catch(Exception ex)
                 {
-                    Trace.Assert(false,ex.Message);
                     
+                    Trace.Assert(false,ex.Message); 
                 }
             }
             return null;

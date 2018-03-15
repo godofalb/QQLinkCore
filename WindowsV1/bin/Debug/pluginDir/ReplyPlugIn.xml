@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--请保证文档名称和你的类的类名一样（注意不是工程名，不是拓展文件名，是类名）-->
 <GeneralSetting>
-  <name value="测试插件1.1">
+  <name value="回复插件v1.0">
     <!--用来编辑插件显示的名字-->
   </name>
-  <des value="这是一个很普通的插件啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊&#xD;&#xA;啊啊啊&#xD;&#xA;">
+  <des value="读取诊断信息进行回复">
     <!--用来编辑插件说明-->
   </des>
   <!--以下4个信息原则上交由用户配置，可以自行修改作为用户初始配置-->
@@ -24,7 +24,7 @@
     </add>
   </UserSetting>
   <!--reject为拒绝列表，receive为接受列表-->
-  <FriendList value="" Mode="reject" />
+ <FriendList value="" Mode="reject" />
   <GroupList value="" Mode="reject" />
   <DisList value="" Mode="reject" />
 </GeneralSetting>

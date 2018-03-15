@@ -22,6 +22,7 @@ using System.Reflection;
 using System.Xml;
 using System.Security.Permissions;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 namespace WindowsV1
 {
    
@@ -41,8 +42,9 @@ namespace WindowsV1
         {
             
             InitializeComponent();
+            
             currentdir = ConfigurationManager.AppSettings[0];
-            if (currentdir.ToLower()== "notdef")
+            if (currentdir == ""||currentdir.ToLower()== "notdef")
             {
                 currentdir = Directory.GetCurrentDirectory() + @"\pluginDir";
             }
@@ -84,10 +86,11 @@ namespace WindowsV1
             foreach (string file in Directory.GetFiles(path))
             {
                 
-                if (file.EndsWith(".dll"))
+                if (file.EndsWith(".xml"))
                 {
+                    /*
                     Assembly newassembly = Assembly.LoadFrom(file);
-
+                    
                     foreach (Type tt in newassembly.GetTypes())
                     {
                       
@@ -95,16 +98,20 @@ namespace WindowsV1
                         {
                             IsPlugIn sp = obj as IsPlugIn;
                             if (sp.Use)
-                            {
-                                plugs.Add(new PlugInP() { Used=sp.Use,Class=tt.Name});
-                                LoadXML(string.Format("{0}\\{1}.xml",path, tt.Name),plugs[plugs.Count-1],sp.NeedD,sp.NeedG,sp.NeedF);
+                            {*/
+                       string filename = Regex.Match(file,".*\\\\(.*?)\\.xml").Groups[1].Value;
+                       plugs.Add(new PlugInP() { Used=true,Class=filename});
+                       LoadXML(file,plugs[plugs.Count-1],true, true, true);
+                    /*
                             }
                         }
-                    }
+                    }*/
+
+
                 }
 
             }
-
+            
             this.Dispatcher.Invoke(new l(() => { plugins.DataContext = plugs; }));
         }
    
@@ -179,7 +186,7 @@ namespace WindowsV1
             linker.Unload();
             linker.loadDomain(currentdir);
             reload.IsEnabled = false;
-            if (Sig.Content == "需要刷新")
+            if ((string)Sig.Content == "需要刷新")
             {
                 Sig.Content = "正常";
             }

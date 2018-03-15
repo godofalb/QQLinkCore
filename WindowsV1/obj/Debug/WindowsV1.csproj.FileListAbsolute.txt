@@ -24,3 +24,5 @@ D:\腾讯创新俱乐部\QQLinkCore\WindowsV1\obj\Debug\Page1.g.cs
 D:\腾讯创新俱乐部\QQLinkCore\WindowsV1\obj\Debug\Edit.baml
 D:\腾讯创新俱乐部\QQLinkCore\WindowsV1\obj\Debug\Edit.g.cs
 D:\腾讯创新俱乐部\QQLinkCore\WindowsV1\obj\Debug\Dictionary1.baml
+D:\腾讯创新俱乐部\QQLinkCore\WindowsV1\bin\Debug\QQLinkCore.dll.config
+D:\腾讯创新俱乐部\QQLinkCore\WindowsV1\obj\Debug\WindowsV1.csproj.CoreCompileInputs.cache
