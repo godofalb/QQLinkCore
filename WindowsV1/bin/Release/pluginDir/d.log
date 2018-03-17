@@ -1,0 +1,20 @@
+失败: 索引超出了数组界限。
+失败: 索引超出了数组界限。
+失败: 索引超出了数组界限。
+失败: 索引超出了数组界限。
+失败: 索引超出了数组界限。
+失败: 索引超出了数组界限。
+失败: BeginPolling at 2018/3/17 11:14:28
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"asd"],"from_uin":2971006158,"msg_id":19270,"msg_type":1,"time":1521256504,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/17 11:15:04
+失败: BeginPolling at 2018/3/17 11:15:04
+失败: BeginPolling at 2018/3/17 11:16:08
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"sdf"],"from_uin":2971006158,"msg_id":19271,"msg_type":1,"time":1521256580,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/17 11:16:20
+失败: BeginPolling at 2018/3/17 11:16:20
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"能告诉我你的名字是什么吗？\n（直接输入信息登记时填写的姓名）",""],"from_uin":3392269051,"msg_id":64737,"msg_type":1,"time":1521256580,"to_uin":2971006158}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/17 11:16:20
+失败: BeginPolling at 2018/3/17 11:16:20
+失败: Receive {"errmsg":"error","retcode":0,"retmsg":"ok"}
+ at 2018/3/17 11:17:20
+失败: BeginPolling at 2018/3/17 11:17:20

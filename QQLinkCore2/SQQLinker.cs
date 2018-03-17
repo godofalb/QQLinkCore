@@ -248,19 +248,19 @@ namespace QQLinkCore
             */
             while (true)
             {
-
+                Trace.Assert(false, "BeginPolling at "+DateTime.Now);
                 try
                 {
                     Console.WriteLine("Asking new1");
                     HttpWebRequest pollrequest = send_d1("http://d1.web2.qq.com/channel/poll2", polldatastring);
-                    Console.WriteLine("S");
+                    
                     HttpWebResponse pollresponse = null;
-                    pollrequest.Timeout = 1000000;
+                    pollrequest.Timeout = 10000000;
                     pollresponse = pollrequest.GetResponse() as HttpWebResponse;
-                    Console.WriteLine("Ss");
+                    
                     string message = GetContent(pollresponse);
                     string qq = "515102224";
-                    
+                    Trace.Assert(false, string.Format("Receive {0} at {1}",message,DateTime.Now));
                     SJsonSolver json = SJsonSolver.Creste(message);
 
                     if ((string)json["retcode"] == "0" && !json.Contains("errmsg")&&proxyDomain!=null)
@@ -330,7 +330,8 @@ namespace QQLinkCore
                 catch(Exception ex)
                 {
                     
-                    Trace.Assert(false,ex.Message); 
+                    Trace.Assert(false,ex.Message);
+                    Trace.Assert(false, DateTime.Now.ToString());
                 }
             }
             return null;
