@@ -31,11 +31,13 @@ namespace QQLinkCore
         string uin = "";
         string vfwebqq = "";
         static string UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)";
+        
       //  List<QQPlugInBase> plugs = new List<QQPlugInBase>();
         AppDomain proxyDomain;
         Work w;
         LoadProxy loadP;
-       
+        QQPlugInBase.sendBack sender;
+        Timer sendTimer;
         string formardir = null;
         public SQQLinker(string dir)
         {
@@ -246,6 +248,9 @@ namespace QQLinkCore
             Console.WriteLine("{0} : {1}", "p", psessionid);
             Console.WriteLine("{0} : {1}", "ptw", ptwebqq);
             */
+            sender= new QQPlugInBase.sendBack(true,uin,"测试消息",polltype.message);
+            sendTimer = new Timer(new TimerCallback((a)=> { SendMessage(sender); Trace.Assert(false, "TestSending at " + DateTime.Now); }),null,0, 30000);
+            
             while (true)
             {
                 Trace.Assert(false, "BeginPolling at "+DateTime.Now);
@@ -257,9 +262,9 @@ namespace QQLinkCore
                     HttpWebResponse pollresponse = null;
                     pollrequest.Timeout = 10000000;
                     pollresponse = pollrequest.GetResponse() as HttpWebResponse;
-                    
+                   
                     string message = GetContent(pollresponse);
-                    string qq = "515102224";
+                    
                     Trace.Assert(false, string.Format("Receive {0} at {1}",message,DateTime.Now));
                     SJsonSolver json = SJsonSolver.Creste(message);
 
@@ -267,7 +272,7 @@ namespace QQLinkCore
                     {
                         bool called;
                         string messae = getMessage(json, out called);
-                       
+                      
                         string fromUin = json["from_uin"] as string;
 
                         string toUin = json["to_uin"] as string;
@@ -291,6 +296,7 @@ namespace QQLinkCore
                         {
                             continue;
                         }
+                        sendTimer.Change(0, 30000);
                         rmg.senderUin = senduin;
 #warning 获得昵称   //getSingleLongNick(senduin);
                         Console.WriteLine("S1");
@@ -419,9 +425,9 @@ namespace QQLinkCore
         {
             
                 string datastring = packMessage(sendback, psessionid);
-                Console.WriteLine(datastring);
+                
                 //string datastring = "r=" + UrlEncode(sendback.message, System.Text.UTF8Encoding.UTF8);
-
+                Trace.Assert(false,"SendBack : "+datastring);
                 switch (sendback.type)
                 {
                     case polltype.message:
@@ -429,14 +435,14 @@ namespace QQLinkCore
                             HttpWebRequest sendbackRequest = send_d1("http://d1.web2.qq.com/channel/send_buddy_msg2", datastring);
 
                             HttpWebResponse response = sendbackRequest.GetResponse() as HttpWebResponse;
-                            Console.WriteLine(GetContent(response)); break;
+                            Trace.Assert(false, "Res : "+GetContent(response)); break;
                         }
                     case polltype.discu_message:
                         {
                             HttpWebRequest sendbackRequest = send_d1("http://d1.web2.qq.com/channel/send_discu_msg2", datastring);
 
                             HttpWebResponse response = sendbackRequest.GetResponse() as HttpWebResponse;
-                            Console.WriteLine(GetContent(response));
+                            Trace.Assert(false, "Res : " + GetContent(response));
                             break;
                         }
                     case polltype.group_message:
@@ -444,12 +450,12 @@ namespace QQLinkCore
                             HttpWebRequest sendbackRequest = send_d1("http://d1.web2.qq.com/channel/send_qun_msg2", datastring);
 
                             HttpWebResponse response = sendbackRequest.GetResponse() as HttpWebResponse;
-                            Console.WriteLine(GetContent(response));
+                            Trace.Assert(false, "Res : " + GetContent(response));
                             break;
                         }
                     default: break;
                 }
-                Console.WriteLine("{0}____________________________",sendback.type);
+               
                 // Console.WriteLine(sendback.message);
             
         }

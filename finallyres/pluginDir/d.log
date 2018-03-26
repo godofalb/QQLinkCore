@@ -1,1 +1,117 @@
 失败: 对象“/c23e7d47_a3b8_4be9_9f8d_af9dddeb1936/eu4sqrsn4yarig4lvuye+zhi_4.rem”已断开连接或不在该服务器上。
+失败: BeginPolling at 2018/3/19 12:33:01
+失败: BeginPolling at 2018/3/19 12:34:06
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"asddd",""],"from_uin":3729388822,"msg_id":8260,"msg_type":1,"time":1521434062,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:34:21
+失败: BeginPolling at 2018/3/19 12:34:21
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"dsda",""],"from_uin":3729388822,"msg_id":8261,"msg_type":1,"time":1521434074,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:34:33
+失败: BeginPolling at 2018/3/19 12:34:33
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"sss"],"from_uin":3729388822,"msg_id":8262,"msg_type":1,"time":1521434075,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:34:34
+失败: BeginPolling at 2018/3/19 12:34:34
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"dsa"],"from_uin":3729388822,"msg_id":8263,"msg_type":1,"time":1521434095,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:34:54
+失败: BeginPolling at 2018/3/19 12:34:54
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"sdsd"],"from_uin":3729388822,"msg_id":8264,"msg_type":1,"time":1521434098,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:34:57
+失败: BeginPolling at 2018/3/19 12:34:57
+失败: BeginPolling at 2018/3/19 12:36:33
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"asd"],"from_uin":3729388822,"msg_id":8265,"msg_type":1,"time":1521434198,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:36:37
+失败: BeginPolling at 2018/3/19 12:36:37
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"dsd",""],"from_uin":3729388822,"msg_id":8266,"msg_type":1,"time":1521434200,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:36:41
+失败: BeginPolling at 2018/3/19 12:36:41
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: SendBack : {"to":3729388822,"content":"[\"能告诉我你的名字是什么吗？
+（直接输入信息登记时填写的姓名）\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: BeginPolling at 2018/3/19 12:37:07
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"sda"],"from_uin":3729388822,"msg_id":8268,"msg_type":1,"time":1521434232,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:11
+失败: BeginPolling at 2018/3/19 12:37:11
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: SendBack : {"to":3729388822,"content":"[\"能告诉我你的名字是什么吗？
+（直接输入信息登记时填写的姓名）\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"d"],"from_uin":3729388822,"msg_id":8269,"msg_type":1,"time":1521434234,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:13
+失败: BeginPolling at 2018/3/19 12:37:13
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: SendBack : {"to":3729388822,"content":"[\"能告诉我你的名字是什么吗？
+（直接输入信息登记时填写的姓名）\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"dsf"],"from_uin":3729388822,"msg_id":8270,"msg_type":1,"time":1521434238,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:17
+失败: BeginPolling at 2018/3/19 12:37:17
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: SendBack : {"to":3729388822,"content":"[\"能告诉我你的名字是什么吗？
+（直接输入信息登记时填写的姓名）\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"sd"],"from_uin":3729388822,"msg_id":8271,"msg_type":1,"time":1521434252,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:31
+失败: BeginPolling at 2018/3/19 12:37:31
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"dd",""],"from_uin":3729388822,"msg_id":8272,"msg_type":1,"time":1521434254,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:34
+失败: BeginPolling at 2018/3/19 12:37:34
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"sd"],"from_uin":3729388822,"msg_id":8273,"msg_type":1,"time":1521434257,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:37
+失败: BeginPolling at 2018/3/19 12:37:37
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"d"],"from_uin":3729388822,"msg_id":8274,"msg_type":1,"time":1521434267,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:46
+失败: BeginPolling at 2018/3/19 12:37:46
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"d"],"from_uin":3729388822,"msg_id":8275,"msg_type":1,"time":1521434268,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:37:47
+失败: BeginPolling at 2018/3/19 12:37:47
+失败: SendBack : {"to":3729388822,"content":"[\"活动未开放\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"d"],"from_uin":3729388822,"msg_id":8276,"msg_type":1,"time":1521434281,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:38:00
+失败: BeginPolling at 2018/3/19 12:38:00
+失败: SendBack : {"to":3729388822,"content":"[\"能告诉我你的名字是什么吗？
+（直接输入信息登记时填写的姓名）\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"sdf"],"from_uin":3729388822,"msg_id":8277,"msg_type":1,"time":1521434284,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/3/19 12:38:03
+失败: BeginPolling at 2018/3/19 12:38:03
+失败: SendBack : {"to":3729388822,"content":"[\"能告诉我你的名字是什么吗？
+（直接输入信息登记时填写的姓名）\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
