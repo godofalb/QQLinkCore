@@ -5,3 +5,4 @@ D:\腾讯创新俱乐部\QQLinkCore\QQLInkPlugin\bin\Release\SJsonSolver.pdb
 D:\腾讯创新俱乐部\QQLinkCore\QQLInkPlugin\obj\Release\QQLInkPlugin.dll
 D:\腾讯创新俱乐部\QQLinkCore\QQLInkPlugin\obj\Release\QQLInkPlugin.pdb
 D:\腾讯创新俱乐部\QQLinkCore\QQLInkPlugin\obj\Release\QQLInkPlugin.csprojResolveAssemblyReference.cache
+D:\腾讯创新俱乐部\QQLinkCore\QQLInkPlugin\obj\Release\QQLInkPlugin.csproj.CoreCompileInputs.cache

@@ -37,6 +37,7 @@ namespace WindowsV1
         delegate void l();
         FileIOPermission permission;
         string currentdir;
+        string searchName = null;
 #warning 修改界面
         public MainWindow()
         {
@@ -48,6 +49,9 @@ namespace WindowsV1
             {
                 currentdir = Directory.GetCurrentDirectory() + @"\pluginDir";
             }
+            searchName = ConfigurationManager.AppSettings[1];
+            Sig.Content = "消息接受组："+searchName;
+            
             if (!Directory.Exists(currentdir))
             {
                 Directory.CreateDirectory(currentdir);
@@ -59,7 +63,7 @@ namespace WindowsV1
          
             
 
-            linker = new SQQLinker(currentdir);
+            linker = new SQQLinker(currentdir,searchName);
             unload.IsEnabled = false;
             reload.IsEnabled = false;
             /*
@@ -73,7 +77,7 @@ namespace WindowsV1
            
            
             Thread newt = new Thread(Load);
-            Console.WriteLine("Start");
+            
             newt.Start(currentdir);
 
         }
@@ -262,6 +266,7 @@ namespace WindowsV1
                 Console.WriteLine(config.AppSettings.File);
                 config.AppSettings.Settings.Clear();
                 config.AppSettings.Settings.Add("PlugInDir", currentdir);
+                config.AppSettings.Settings.Add("DisName",searchName);
                 config.Save();
             }
             return;

@@ -30,7 +30,9 @@ namespace QQLinkCore
         string psessionid = "";
         string uin = "";
         string vfwebqq = "";
+        string disUin = "";
         static string UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)";
+        string searchName = "消息接收";
         
       //  List<QQPlugInBase> plugs = new List<QQPlugInBase>();
         AppDomain proxyDomain;
@@ -39,11 +41,16 @@ namespace QQLinkCore
         QQPlugInBase.sendBack sender;
         Timer sendTimer;
         string formardir = null;
-        public SQQLinker(string dir)
+        public SQQLinker(string dir,string sN=null)
         {
             cc = new CookieContainer();
             proxyDomain = null;
             loadDomain(dir);
+            if (sN != null &&sN!="")
+            {
+                searchName = sN;
+                    
+            }
           //  Trace.Assert(false, "啊实打实的");
            // QQPlugInBase.QQLinker = this;
            // plugs.Add(new DemoPlugIn());
@@ -248,8 +255,8 @@ namespace QQLinkCore
             Console.WriteLine("{0} : {1}", "p", psessionid);
             Console.WriteLine("{0} : {1}", "ptw", ptwebqq);
             */
-            sender= new QQPlugInBase.sendBack(true,uin,"测试消息",polltype.message);
-            sendTimer = new Timer(new TimerCallback((a)=> { SendMessage(sender); Trace.Assert(false, "TestSending at " + DateTime.Now); }),null,0, 30000);
+            sender= new QQPlugInBase.sendBack(true, disUin, DateTime.Now.ToString(), polltype.discu_message);
+            sendTimer = new Timer(new TimerCallback((a)=> { sender.message = DateTime.Now.ToString(); SendMessage(sender); Trace.Assert(false, "TestSending at " + DateTime.Now); }),null,0, 30000);
             
             while (true)
             {
@@ -644,6 +651,29 @@ namespace QQLinkCore
             Console.WriteLine(sjser);
             Console.WriteLine("_______________________________");
         }
+        static string GetDisUin(string content, string search)
+        {
+            string retcode = Regex.Match(content, "\"retcode\":(\\d*),").Groups[1].ToString();
+            Console.WriteLine(retcode);
+            if (retcode != "0")
+            {
+                return "";
+            }
+            else
+            {
+                
+                foreach (Match match in Regex.Matches(content, "\"name\":\"(.*?)\",\"did\":(\\d*)"))
+                {
+                    
+                    if (match.Groups[1].ToString() == search)
+                    {
+                        return match.Groups[2].ToString();
+                    }
+
+                }
+                return null;
+            }
+        }
         void getDisG()
         {
             Thread.Sleep(1000);
@@ -664,10 +694,11 @@ namespace QQLinkCore
 
 
             HttpWebResponse response = newrequest.GetResponse() as HttpWebResponse;
-            SJsonSolver sjser = SJsonSolver.Creste(GetContent(response));
-            Console.WriteLine("_______________________________");
-            Console.WriteLine(sjser);
-            Console.WriteLine("_______________________________");
+            string content=GetContent(response);
+            disUin = GetDisUin(content, searchName);
+            Trace.Assert(false, disUin);
+            
+           
         }
         Stream getPic(string url)
         { 

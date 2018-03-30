@@ -64,7 +64,7 @@
             <Button Grid.Row="2" Name="unload" Width="100" Click="unload_Click_1"  Content="卸载插件" Margin="10,10,10,10" HorizontalAlignment="Left"></Button>
             <Button Grid.Row="2" Name="reload" Width="100" Click="reload_Click_1"  Content="重载插件" Margin="10,10,10,10" HorizontalAlignment="Right"></Button>
             <Button Grid.Row="3" Name="do" Click="do_Click_1"
-                Content="开始使用" Margin="10,10,10,10"/>
+                Content="开始使用" Margin="10,10,10,10" />
             
         </Grid>
         
