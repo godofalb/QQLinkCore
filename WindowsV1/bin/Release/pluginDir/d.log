@@ -629,3 +629,170 @@ Strsd:71:这是我的介绍
 失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/3/30 15:07:43",""],"did":3331482034,"from_uin":3331482034,"msg_id":776,"msg_type":5,"send_uin":3392269051,"time":1522393665,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
  at 2018/3/30 15:07:43
 失败: BeginPolling at 2018/3/30 15:07:43
+失败: 3474664542
+失败: BeginPolling at 2018/4/1 9:43:45
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:43:45\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"errmsg":"error!!!","retcode":1202}
+
+失败: TestSending at 2018/4/1 9:43:45
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:43:45",""],"did":3474664542,"from_uin":3474664542,"msg_id":3967,"msg_type":5,"send_uin":3392269051,"time":1522547029,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:43:45
+失败: BeginPolling at 2018/4/1 9:43:45
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"安安"],"from_uin":3981547365,"msg_id":21194,"msg_type":1,"time":1522547038,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:43:54
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:43:54\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: BeginPolling at 2018/4/1 9:43:54
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:43:54
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:43:54",""],"did":3474664542,"from_uin":3474664542,"msg_id":3968,"msg_type":5,"send_uin":3392269051,"time":1522547038,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:43:54
+失败: BeginPolling at 2018/4/1 9:43:54
+失败: 3474664542
+失败: BeginPolling at 2018/4/1 9:47:43
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:47:43\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:47:43
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:47:43",""],"did":3474664542,"from_uin":3474664542,"msg_id":3969,"msg_type":5,"send_uin":3392269051,"time":1522547267,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:47:43
+失败: BeginPolling at 2018/4/1 9:47:43
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:48:13\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:48:13
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:48:13",""],"did":3474664542,"from_uin":3474664542,"msg_id":3970,"msg_type":5,"send_uin":3392269051,"time":1522547297,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:13
+失败: BeginPolling at 2018/4/1 9:48:13
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"安安"],"from_uin":3981547365,"msg_id":21195,"msg_type":1,"time":1522547312,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:28
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:48:28\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: BeginPolling at 2018/4/1 9:48:28
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:48:28
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:48:28",""],"did":3474664542,"from_uin":3474664542,"msg_id":3971,"msg_type":5,"send_uin":3392269051,"time":1522547312,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:28
+失败: BeginPolling at 2018/4/1 9:48:28
+失败: SendBack : {"to":3981547365,"content":"[\"刘瑞
+:很高兴使用本产品。qq1697741077
+
+妮妮
+:1157958468
+
+圈er
+:qq1403254606  喜欢爬山
+
+\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"妮妮"],"from_uin":3981547365,"msg_id":21196,"msg_type":1,"time":1522547320,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:36
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:48:36\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: BeginPolling at 2018/4/1 9:48:36
+失败: SendBack : {"to":3981547365,"content":"[\"不冻游星
+:13369784319--这个少年是福建大学的哦~~~---by阿鲁巴
+
+圈er
+:qq1403254606  喜欢爬山
+
+橘子
+:qq359521302
+
+\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:48:36
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:48:36",""],"did":3474664542,"from_uin":3474664542,"msg_id":3972,"msg_type":5,"send_uin":3392269051,"time":1522547320,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:36
+失败: BeginPolling at 2018/4/1 9:48:36
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"刘瑞"],"from_uin":3981547365,"msg_id":21197,"msg_type":1,"time":1522547336,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:53
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:48:53\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: BeginPolling at 2018/4/1 9:48:53
+失败: SendBack : {"to":3981547365,"content":"[\"妮妮
+:1157958468
+
+安安
+:qq:1045360797
+
+Jepson
+:1102982941
+
+\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:48:53
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:48:53",""],"did":3474664542,"from_uin":3474664542,"msg_id":3973,"msg_type":5,"send_uin":3392269051,"time":1522547337,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:53
+失败: BeginPolling at 2018/4/1 9:48:53
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"向未来"],"from_uin":3981547365,"msg_id":21198,"msg_type":1,"time":1522547341,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:57
+失败: BeginPolling at 2018/4/1 9:48:57
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:48:57\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: SendBack : {"to":3981547365,"content":"[\"圈er
+:qq1403254606  喜欢爬山
+
+妮妮
+:1157958468
+
+刘瑞
+:很高兴使用本产品。qq1697741077
+
+\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:48:58
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:48:57",""],"did":3474664542,"from_uin":3474664542,"msg_id":3974,"msg_type":5,"send_uin":3392269051,"time":1522547341,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:48:58
+失败: BeginPolling at 2018/4/1 9:48:58
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"Jepson"],"from_uin":3981547365,"msg_id":21199,"msg_type":1,"time":1522547346,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:49:02
+失败: BeginPolling at 2018/4/1 9:49:02
+失败: SendBack : {"to":3981547365,"content":"[\"刘瑞
+:很高兴使用本产品。qq1697741077
+
+不冻游星
+:13369784319--这个少年是福建大学的哦~~~---by阿鲁巴
+
+安安
+:qq:1045360797
+
+\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:49:02\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: Receive {"result":[{"poll_type":"message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"橘子"],"from_uin":3981547365,"msg_id":21200,"msg_type":1,"time":1522547352,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:49:09
+失败: SendBack : {"did":3474664542,"content":"[\"2018/4/1 9:49:09\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: BeginPolling at 2018/4/1 9:49:09
+失败: SendBack : {"to":3981547365,"content":"[\"圈er
+:qq1403254606  喜欢爬山
+
+不冻游星
+:13369784319--这个少年是福建大学的哦~~~---by阿鲁巴
+
+妮妮
+:1157958468
+
+\",[\"font\",{\"name\":\"宋体\",\"size\":10,\"style\":[0,0,0],\"color\":\"000000\"}]]","face":594,"clientid":53999199,"msg_id":3600001,"psessionid":"8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400001ad00000066b026e040015808a206d0000000a406172314338344a69526d0000002859185d94e66218548d1ecb1a12513c86126b3afb97a3c2955b1070324790733ddb059ab166de6857"}
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:49:09
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:49:02",""],"did":3474664542,"from_uin":3474664542,"msg_id":3975,"msg_type":5,"send_uin":3392269051,"time":1522547353,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:49:09
+失败: BeginPolling at 2018/4/1 9:49:09
+失败: Res : {"retcode":0}
+
+失败: Res : {"retcode":0}
+
+失败: TestSending at 2018/4/1 9:49:09
+失败: Receive {"result":[{"poll_type":"discu_message","value":{"content":[["font",{"color":"000000","name":"微软雅黑","size":10,"style":[0,0,0]}],"2018/4/1 9:49:09",""],"did":3474664542,"from_uin":3474664542,"msg_id":3976,"msg_type":5,"send_uin":3392269051,"time":1522547353,"to_uin":3392269051}}],"retcode":0,"retmsg":"ok"}
+ at 2018/4/1 9:49:09
+失败: BeginPolling at 2018/4/1 9:49:09
