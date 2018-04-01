@@ -1,0 +1,15 @@
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\bin\Debug\PlugInDemo.dll
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\bin\Debug\PlugInDemo.pdb
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\bin\Debug\QQLInkPlugin.dll
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\bin\Debug\QQLInkPlugin.pdb
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\obj\Debug\PlugInDemo.csprojResolveAssemblyReference.cache
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\obj\Debug\PlugInDemo.dll
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\obj\Debug\PlugInDemo.pdb
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDir\PlugInDemo.dll
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDir\PlugInDemo.pdb
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDir\PlugInDemo.dll.config
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\Res\PlugInDemo.dll
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\Res\PlugInDemo.pdb
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\Res\QQLInkPlugin.dll
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\Res\QQLInkPlugin.pdb
+D:\腾讯创新俱乐部\QQLinkCore\PlugInDemo\obj\Debug\PlugInDemo.csproj.CoreCompileInputs.cache
